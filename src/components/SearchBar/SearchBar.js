@@ -13,6 +13,8 @@ const SearchBar = (props) => {
       </div>
       <form className="search-form">
         <input
+          value={props.value}
+          onChange={props.doASearch}
           type="text"
           placeholder="Search"
         />

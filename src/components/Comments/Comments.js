@@ -12,6 +12,7 @@ const Comments = props => {
         comments.map(commentsObject => {
           return (
             <Comment
+              key={commentsObject.id}
               comment={commentsObject}
             />
           )

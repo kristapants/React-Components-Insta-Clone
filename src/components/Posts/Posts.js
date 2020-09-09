@@ -1,7 +1,6 @@
 import React from 'react';
 import Post from './Post';
 import './Posts.css';
-import PostHeader from './PostHeader';
 
 const Posts = (props) => {
   // 🔥 Make sure the parent of Posts is passing the right props!

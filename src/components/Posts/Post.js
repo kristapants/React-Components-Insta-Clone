@@ -2,12 +2,10 @@ import React from 'react';
 import Comments from '../Comments/Comments';
 import LikeSection from './LikeSection';
 import PostHeader from './PostHeader';
-import Posts from './Posts';
 
 const Post = props => {
   // 🔥 Make sure the parent of Post is passing the right props!
   const { post, likePost } = props;
-  console.log(post)
   return (
     <div className='post-border'>
       <PostHeader
@@ -29,6 +27,7 @@ const Post = props => {
       />
       {/* Comments also wants its props! */}
       <Comments 
+        key={post.comments.id}
         comments={post.comments}
       />
     </div>
